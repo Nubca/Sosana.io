@@ -87,7 +87,7 @@ body:
         4. **Cleanup:** Once reviewed, the `triage` label is replaced with a status label.
 
         ### 💡 Pro-Tips for a Great Report
-        * **Visuals:** Screenshots or screen recordings are 10x better than text.
+        * **Visuals:** Screenshots or screen recordings are 10x better than text. (Loom is great!)
         * **Context:** Mentioning your browser or device saves us a lot of guessing.
         * **Links:** If this is related to another issue, paste the `#issue-number`.
 
