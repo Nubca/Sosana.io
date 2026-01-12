@@ -75,21 +75,21 @@ body:
     attributes:
       value: |
         ---
-        ### What usually happens after you send a report
+        ## 📮 What happens next?
         
-          1. It gets the **"triage"** label so our team sees it in the review list.
-          2. Someone reads it and:
-             - Confirms the kind of report (bug / feature / idea).
-             - Adds a clear label and sets how urgent it is.
-             - Asks for more information if needed.
-             - Considers next steps and assigns it to a person.
-          3. After a first review, the "triage" label is removed.
+        > [!NOTE]
+        > Once submitted, your report is tagged with **triage**. Our team reviews these daily to ensure nothing gets missed.
 
-        ### How you can help
-        
-          * Add a short title and one-sentence summary.
-          * If you can, add steps and a screenshot — those help a lot.
-          * Say where you saw it (website, app, page name).
-          * If you find something similar, add a link to that report.
+        ### 🔄 Our Process
+        1. **Classification:** We confirm if it's a bug, feature, or idea.
+        2. **Prioritization:** We set the urgency and assign a team member.
+        3. **Clarification:** If we're stuck, we'll comment with clear "next steps" for you.
+        4. **Cleanup:** Once reviewed, the `triage` label is replaced with a status label.
 
-        _If we need more from you, we’ll ask with simple, clear steps to help us reproduce or understand the issue._
+        ### 💡 Pro-Tips for a Great Report
+        * **Visuals:** Screenshots or screen recordings are 10x better than text.
+        * **Context:** Mentioning your browser or device saves us a lot of guessing.
+        * **Links:** If this is related to another issue, paste the `#issue-number`.
+
+        ---
+        *Thank you for helping us improve Sosana.io!*
