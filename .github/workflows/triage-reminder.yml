@@ -13,6 +13,7 @@ jobs:
         with:
           script: |
             const DAYS = 7; // change this number if you want a different delay
+            // cutoff date formatted as YYYY-MM-DD
             const cutoff = new Date(Date.now() - DAYS * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
             const q = `repo:${context.repo.owner}/${context.repo.repo} is:issue is:open label:triage created:<${cutoff}`;
             const res = await github.rest.search.issuesAndPullRequests({ q, per_page: 100 });
@@ -22,7 +23,8 @@ jobs:
             }
             for (const item of res.data.items) {
               const number = item.number;
-              const body = `Hi — this issue has been waiting for a first review for a while. If you can, please add any helpful details (steps, screenshots), or maintainers will triage it soon. Thanks!`;
+              // plain friendly reminder message
+              const body = "Hi — this issue has been waiting for a first review for a while. If you can, please add any helpful details (steps, screenshots), or maintainers will triage it soon. Thanks!";
               // avoid duplicate reminder comments
               const comments = await github.rest.issues.listComments({
                 owner: context.repo.owner,
