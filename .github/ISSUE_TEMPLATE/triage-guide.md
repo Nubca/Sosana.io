@@ -1,6 +1,6 @@
 # Simple guide: What happens after you send an issue
 
-Important note: This "Issue Tracker" is not official. It will be shared with the team but is community driven.
+Important note: This "Issue Tracker" is not official. It will be shared with the team, but is community driven.
 
 This short guide explains, in plain language, what happens after you send an issue and how you can help.
 
@@ -23,7 +23,7 @@ What usually happens after you send a report
    - Confirms the kind of report (bug / feature / idea).
    - Adds a clear label (for example, bug or feature) and sets how urgent it is.
    - Asks for more information if needed (we’ll say exactly what we need).
-   - Assigns it to a person or moves it to our planning board.
+   - Assigns it to a person and considers next steps.
 3. After a first review, the "triage" label is removed.
 
 How you can help
