@@ -1,0 +1,20 @@
+{
+  "labels": [
+    { "name": "triage", "color": "FBCA04", "description": "New report, waiting for first review" },
+    { "name": "bug", "color": "d73a4a", "description": "Something is broken" },
+    { "name": "problem", "color": "fbca04", "description": "Confusing behavior or partial break" },
+    { "name": "feature", "color": "0e8a16", "description": "Request for a new capability" },
+    { "name": "idea", "color": "8e8e8e", "description": "Small improvement or suggestion" },
+    { "name": "needs-info", "color": "ffd8b5", "description": "We need more details from the reporter" },
+    { "name": "needs-investigation", "color": "c2e0ff", "description": "Someone needs to try reproducing this" },
+    { "name": "needs-design", "color": "a2eeef", "description": "Requires design/UX work" },
+    { "name": "needs-testing", "color": "fef2c0", "description": "Ready for QA verification" },
+    { "name": "duplicate", "color": "ededed", "description": "This report copies another issue" },
+    { "name": "invalid", "color": "ffffff", "description": "Not a valid issue for this tracker" },
+    { "name": "wontfix", "color": "5319e7", "description": "We will not fix this" },
+    { "name": "urgent", "color": "b60205", "description": "Take immediate action" },
+    { "name": "high", "color": "d93f0b", "description": "High priority" },
+    { "name": "normal", "color": "2cbe4e", "description": "Normal priority" },
+    { "name": "low", "color": "0e8a16", "description": "Low priority" }
+  ]
+}
