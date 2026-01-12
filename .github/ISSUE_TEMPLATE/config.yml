@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Report a bug or idea"
+    url: "/issues/new?template=easy-issue.yml"
+    about: "Open a short, friendly form to tell us about bugs, problems, features, or ideas."
