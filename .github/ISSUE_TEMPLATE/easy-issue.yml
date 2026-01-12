@@ -1,98 +1,73 @@
-name: "Quick issue or idea"
-description: "Use this form to tell us about a bug, a problem, a feature request, or an idea. Short, friendly, and easy to fill out."
-title: "[{{type}}] {{summary}}"
-labels:
-  - "triage"
+# This is a non-official community-driven issue tracker to share with the Sosana Team
+name: Quick issue or idea
+description: Use this form to tell us about a bug, a problem, a feature request, or an idea.
+title: "[Issue]: "
+labels: ["triage"]
 body:
   - type: textarea
     id: summary
     attributes:
-      label: "Give your report a short title"
-      description: "One short sentence that says what happened or what you want."
-      placeholder: "e.g. Total is wrong on invoice page"
+      label: Give your report a short title
+      description: One short sentence that says what happened or what you want.
+      placeholder: e.g. Total is wrong on invoice page
+    validations:
       required: true
 
   - type: dropdown
     id: type
     attributes:
-      label: "What is this?"
-      description: "Pick the closest option so we know how to handle it."
+      label: What is this?
+      description: Pick the closest option so we know how to handle it.
       options:
         - "Bug (something is broken)"
         - "Problem (something is confusing or not working as expected)"
         - "Feature request (a new thing you'd like)"
         - "Idea / suggestion (a smaller improvement)"
+    validations:
       required: true
 
   - type: dropdown
     id: impact
     attributes:
-      label: "How much does this affect you?"
-      description: "Helps us know how quickly to respond."
+      label: How much does this affect you?
       options:
         - "Low — small or cosmetic"
         - "Medium — affects some users or workflows"
         - "High — blocks important work for many users"
         - "Critical — stops the whole product or causes data loss"
+    validations:
       required: false
 
   - type: input
     id: where
     attributes:
-      label: "Where did you see this?"
-      description: "Website, app, a page name, or device — whatever helps us find it."
+      label: Where did you see this?
       placeholder: "e.g. website > Checkout, mobile app > iPhone 12"
-      required: false
-
-  - type: input
-    id: when
-    attributes:
-      label: "When did you see it?"
-      description: "If known, add the date/time, app version, or steps you did just before it happened."
-      placeholder: "e.g. Today at 3pm, v2.1.4, after logging in"
+    validations:
       required: false
 
   - type: textarea
     id: steps
     attributes:
-      label: "What did you do? (Steps)"
-      description: "Tell us the exact steps so someone else can try the same. If you don't know, that's okay — skip this."
+      label: What did you do? (Steps)
       placeholder: "1. Go to ...  2. Click ...  3. See ..."
-      required: false
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: "What did you expect to happen?"
-      description: "What did you think should have happened instead?"
+    validations:
       required: false
 
   - type: textarea
     id: actual
     attributes:
-      label: "What actually happened?"
-      description: "Describe what you saw (error message, wrong number, confusing wording)."
-      required: false
-
-  - type: attachments
-    id: attachments
-    attributes:
-      label: "Screenshots or files"
-      description: "Attach pictures, recordings, or files that show the problem or idea."
-      required: false
-
-  - type: textarea
-    id: more
-    attributes:
-      label: "Anything else we should know?"
-      description: "Links, related pages, or other context. Put 'N/A' if none."
+      label: What happened?
+      description: Describe what you saw vs what you expected.
+    validations:
       required: false
 
   - type: checkboxes
     id: reporter_checks
     attributes:
-      label: "Quick checklist (helps us act faster)"
+      label: Quick checklist
       options:
         - label: "I looked for similar reports"
-        - label: "I added steps or a screenshot if I could"
-        - label: "I removed any private information from logs or screenshots"
+          required: false
+        - label: "I removed any private information"
+          required: false
