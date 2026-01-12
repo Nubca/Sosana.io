@@ -76,18 +76,20 @@ body:
       value: |
         ---
         ### What usually happens after you send a report
-        1. It gets the **"triage"** label so our team sees it in the review list.
-        2. Someone reads it and:
-           - Confirms the kind of report (bug / feature / idea).
-           - Adds a clear label and sets how urgent it is.
-           - Asks for more information if needed.
-           - Assigns it to a person and considers next steps.
-        3. After a first review, the "triage" label is removed.
+        
+          1. It gets the **"triage"** label so our team sees it in the review list.
+          2. Someone reads it and:
+             - Confirms the kind of report (bug / feature / idea).
+             - Adds a clear label and sets how urgent it is.
+             - Asks for more information if needed.
+             - Considers next steps and assigns it to a person.
+          3. After a first review, the "triage" label is removed.
 
         ### How you can help
-        * Add a short title and one-sentence summary.
-        * If you can, add steps and a screenshot — those help a lot.
-        * Say where you saw it (website, app, page name).
-        * If you find something similar, add a link to that report.
+        
+          * Add a short title and one-sentence summary.
+          * If you can, add steps and a screenshot — those help a lot.
+          * Say where you saw it (website, app, page name).
+          * If you find something similar, add a link to that report.
 
         _If we need more from you, we’ll ask with simple, clear steps to help us reproduce or understand the issue._
