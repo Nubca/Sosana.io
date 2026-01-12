@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Create or update labels
         uses: actions/github-script@v6
         with:
@@ -24,21 +25,23 @@ jobs:
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   name: l.name,
-                  color: l.color.replace('#',''),
+                  color: (l.color || '').replace('#', ''),
                   description: l.description || ''
                 });
               } catch (e) {
+                // If the label already exists, update it instead
                 if (e.status === 422 || (e.message && e.message.includes('already_exists'))) {
                   try {
                     await github.rest.issues.updateLabel({
                       owner: context.repo.owner,
                       repo: context.repo.repo,
                       name: l.name,
-                      color: l.color.replace('#',''),
+                      color: (l.color || '').replace('#', ''),
                       description: l.description || ''
                     });
                   } catch (u) {
-                    core.warning(`Could not update label ${l.name}: ${u}`);
+                    // use console.warn (core is not defined in this embedded script)
+                    console.warn(`Could not update label ${l.name}: ${u}`);
                   }
                 } else {
                   throw e;
