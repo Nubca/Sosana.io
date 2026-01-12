@@ -1,4 +1,3 @@
-# Important Note: This "Issue Tracker" is not official and though it will be shared with the team, it is a community-driven system.
 name: "Quick issue or idea"
 description: "Use this form to tell us about a bug, a problem, a feature request, or an idea. Short, friendly, and easy to fill out."
 title: "[{{type}}] {{summary}}"
