@@ -1,2 +1,2 @@
-# Sosana.io
-This is an empty repository for the purpose of leveraging Github's built-in issue tracking features to track issues, bugs, and feature requests for Sosana.
+# Sosana.io Issue Tracker
+This unofficial repository leverages Github's built-in issue tracking features for collaboration with the Sosana team.
