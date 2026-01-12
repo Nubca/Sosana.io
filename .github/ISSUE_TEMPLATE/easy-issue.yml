@@ -70,3 +70,23 @@ body:
           required: false
         - label: "I removed any private information"
           required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ### What usually happens after you send a report
+1. It gets the “triage” label so our team sees it in the review list.
+2. Someone reads it and:
+   - Confirms the kind of report (bug / feature / idea).
+   - Adds a clear label (for example, bug or feature) and sets how urgent it is.
+   - Asks for more information if needed (we’ll say exactly what we need).
+   - Assigns it to a person and considers next steps.
+3. After a first review, the "triage" label is removed.
+
+How you can help
+- Add a short title and one-sentence summary.
+- If you can, add steps and a screenshot — those help a lot.
+- Say where you saw it (website, app, page name).
+- If you find something similar, add a link to that report.
+
+If we need more from you, we’ll ask with simple, clear steps to help us reproduce or understand the issue.
