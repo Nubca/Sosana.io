@@ -1,4 +1,3 @@
-# This is a non-official community-driven issue tracker to share with the Sosana Team
 name: Quick issue or idea
 description: Use this form to tell us about a bug, a problem, a feature request, or an idea.
 title: "[Issue]: "
@@ -71,5 +70,3 @@ body:
           required: false
         - label: "I removed any private information"
           required: false
-
-[What happens after submission?](https://github.com/Nubca/Sosana.io/blob/main/.github/ISSUE_TEMPLATE/triage-guide.md)
