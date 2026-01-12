@@ -71,3 +71,5 @@ body:
           required: false
         - label: "I removed any private information"
           required: false
+
+[What happens after submission?](https://github.com/Nubca/Sosana.io/blob/main/.github/ISSUE_TEMPLATE/triage-guide.md)
